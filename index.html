@@ -27,26 +27,27 @@
     background:linear-gradient(90deg,var(--green-1),#eafbe9);
     box-shadow:0 6px 18px rgba(6,50,26,0.06)
   }
-  .brand{display:flex;flex-direction:column}
-  .brand h1{margin:0;font-size:22px;letter-spacing:0.2px}
+  .brand h1{margin:0;font-size:22px}
   .brand p{margin:6px 0 0;color:var(--muted);font-size:14px}
-  .hero{display:flex;gap:30px;align-items:center;padding:28px 0}
+  .hero{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    padding:28px 0;
+  }
   .hero .text{flex:1}
-  .hero h2{margin:0 0 8px;font-size:34px}
-  .hero p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  .hero h2{margin:0 0 8px;font-size:32px}
+  .hero p{margin:0;color:var(--muted);line-height:1.5}
   .card{
     background:var(--card);
     padding:18px;
     border-radius:12px;
     box-shadow:0 8px 30px rgba(8,64,36,0.06)
   }
-  .img-wrap{width:420px;flex-shrink:0}
-  .img-wrap img{
-    width:100%;
-    height:auto;
-    border-radius:12px;
-    display:block;
-    object-fit:cover;
+  .img-clean{
+    width:280px;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
   }
   .cta{
     display:inline-block;
@@ -57,101 +58,94 @@
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
-    box-shadow:0 6px 18px rgba(39,185,107,0.22)
+    box-shadow:0 6px 18px rgba(39,185,107,0.22);
   }
   .cta:hover{filter:brightness(0.9)}
   .features{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:18px;
-    margin-top:26px
+    margin-top:26px;
   }
   .feature{
     background:linear-gradient(180deg,#fff,#f8fffa);
     padding:16px;
     border-radius:10px;
     border:1px solid #e7f6ec;
-    text-align:left;
-    font-size:15px;
-    color:var(--dark)
+    color:var(--dark);
   }
   footer{text-align:center;padding:20px;margin-top:30px;color:var(--muted)}
 
   /* MOBILE */
   @media (max-width:900px){
     .hero{flex-direction:column-reverse;align-items:stretch}
-    .img-wrap{width:100%}
+    .img-clean{width:100%}
     .features{grid-template-columns:repeat(2,1fr)}
-    .hero h2{font-size:26px}
   }
   @media (max-width:520px){
     header{flex-direction:column;align-items:flex-start;gap:12px;padding:18px}
-    .hero h2{font-size:22px}
-    .features{grid-template-columns:1fr;gap:12px}
-    .cta{width:100%;text-align:center;font-size:18px;padding:14px 18px}
+    .features{grid-template-columns:1fr}
+    .cta{width:100%;text-align:center}
     .container{padding:12px}
   }
 </style>
 </head>
 <body>
   <div class="container">
+
     <header>
       <div class="brand">
         <h1>O Segredo do Emagrecimento</h1>
         <p>O QUE NÃO TE CONTAM — e-book para mulheres</p>
       </div>
-      <div style="text-align:right">
-        <a class="cta" href="https://pay.kiwify.com.br/Q2LrZ6a" target="_blank" rel="noopener">Quero garantir meu e-book</a>
-      </div>
+      <a class="cta" href="https://pay.kiwify.com.br/Q2LrZ6a" target="_blank">Quero meu e-book</a>
     </header>
 
     <section class="hero">
       <div class="text">
-        <h2>Transforme seu corpo e sua mente — sem dietas malucas</h2>
-        <p class="card">Descubra segredos cientificamente embasados e técnicas psicológicas que realmente funcionam. Criado para mulheres reais, com rotina corrida e sem tempo para métodos complicados.</p>
+        <h2>Transforme seu corpo e sua mente — com leveza</h2>
+        <p class="card">Descubra segredos científicos, técnicas psicológicas e hábitos simples que realmente funcionam para mulheres com rotina corrida.</p>
 
         <div class="card" style="margin-top:18px">
           <strong style="display:block;margin-bottom:8px">Dentro do e-book você descobre:</strong>
           <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.6">
             <li>10 segredos que nunca te contaram</li>
-            <li>Plano de 30 dias simples e eficiente</li>
-            <li>Exercícios práticos para rotina corrida</li>
-            <li>Como controlar compulsão e ansiedade</li>
+            <li>Plano de 30 dias eficiente e prático</li>
+            <li>Como vencer compulsão e ansiedade</li>
+            <li>Hábitos para emagrecer com leveza</li>
           </ul>
           <a class="cta" href="https://pay.kiwify.com.br/Q2LrZ6a">Quero começar agora</a>
         </div>
       </div>
 
-      <div class="img-wrap">
-        <img src="https://images.unsplash.com/photo-1594737625785-c0f5d0021f3a?q=80&w=1080&auto=format&fit=crop" 
-             alt="Mulher fitness saudável"/>
-      </div>
+      <img class="img-clean"
+           src="https://jurosaap.github.io/meu-site/gym-9859628_1280.png"
+           alt="Mulher fitness sorrindo em academia">
     </section>
 
     <section class="features">
       <div class="feature">
         <strong>Leveza emocional</strong>
-        <div style="margin-top:8px;color:var(--muted)">Métodos para controlar ansiedade e comer sem culpa.</div>
+        <p style="color:var(--muted)">Controle da ansiedade e da compulsão.</p>
       </div>
       <div class="feature">
-        <strong>Resultados sustentáveis</strong>
-        <div style="margin-top:8px;color:var(--muted)">Nada de efeito sanfona — evolua com consciência.</div>
+        <strong>Resultados reais</strong>
+        <p style="color:var(--muted)">Nada de efeito sanfona.</p>
       </div>
       <div class="feature">
-        <strong>Rotina que cabe em você</strong>
-        <div style="margin-top:8px;color:var(--muted)">Treinos curtos, hábitos simples e consistentes.</div>
+        <strong>Para rotina corrida</strong>
+        <p style="color:var(--muted)">Métodos simples e aplicáveis.</p>
       </div>
     </section>
 
-    <section style="margin-top:28px" class="card">
-      <h3 style="margin:0 0 8px">Garantia & Segurança</h3>
-      <p style="margin:0;color:var(--muted)">Você tem 7 dias para testar. Não gostou? Devolvemos seu dinheiro.</p>
-      <p style="margin:12px 0 0;font-size:14px;color:#6b8b75">Preço promocional por tempo limitado: <strong>R$ 37</strong></p>
-    </section>
+    <footer>© 2025 • O Segredo do Emagrecimento</footer>
 
-    <footer>
-      © 2025 • O Segredo do Emagrecimento — Desenvolvido por você
-    </footer>
   </div>
 </body>
 </html>
+
+  
+  
+ 
+
+  
