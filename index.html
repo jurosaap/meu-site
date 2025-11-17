@@ -1,108 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Segredo do Emagrecimento - O QUE NÃO TE CONTAM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f6fff6;
-            color: #1f3b1f;
-        }
-        header {
-            background: #baf2c2;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        header h2 {
-            font-weight: normal;
-            margin-top: 10px;
-        }
-        section {
-            padding: 30px 20px;
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.6;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #2f7a39;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-        .box {
-            background: #e4ffe8;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #baf2c2;
-            margin-top: 30px;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>O Segredo do Emagrecimento — O QUE NÃO TE CONTAM</title>
+<meta name="description" content="E-book para mulheres: segredos reais sobre emagrecimento com ciência, psicologia e hábitos sustentáveis."/>
+<style>
+  :root{
+    --bg:#f3fff7;
+    --green-1:#c8f5d0;
+    --green-2:#27b96b;
+    --dark:#153825;
+    --card:#ffffff;
+    --muted:#6b8b75;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter, Arial, Helvetica, sans-serif;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased}
+  .container{max-width:1100px;margin:0 auto;padding:20px}
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:24px;
+    border-radius:12px;
+    background:linear-gradient(90deg,var(--green-1),#eafbe9);
+    box-shadow:0 6px 18px rgba(6,50,26,0.06)
+  }
+  .brand{display:flex;flex-direction:column}
+  .brand h1{margin:0;font-size:22px;letter-spacing:0.2px}
+  .brand p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .hero{display:flex;gap:30px;align-items:center;padding:28px 0}
+  .hero .text{flex:1}
+  .hero h2{margin:0 0 8px;font-size:34px}
+  .hero p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  .card{
+    background:var(--card);
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 8px 30px rgba(8,64,36,0.06)
+  }
+  .img-wrap{width:420px;flex-shrink:0}
+  .img-wrap img{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+    display:block;
+    object-fit:cover;
+  }
+  .cta{
+    display:inline-block;
+    margin-top:16px;
+    background:var(--green-2);
+    color:#fff;
+    padding:14px 26px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 6px 18px rgba(39,185,107,0.22)
+  }
+  .cta:hover{filter:brightness(0.9)}
+  .features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:26px
+  }
+  .feature{
+    background:linear-gradient(180deg,#fff,#f8fffa);
+    padding:16px;
+    border-radius:10px;
+    border:1px solid #e7f6ec;
+    text-align:left;
+    font-size:15px;
+    color:var(--dark)
+  }
+  footer{text-align:center;padding:20px;margin-top:30px;color:var(--muted)}
+
+  /* MOBILE */
+  @media (max-width:900px){
+    .hero{flex-direction:column-reverse;align-items:stretch}
+    .img-wrap{width:100%}
+    .features{grid-template-columns:repeat(2,1fr)}
+    .hero h2{font-size:26px}
+  }
+  @media (max-width:520px){
+    header{flex-direction:column;align-items:flex-start;gap:12px;padding:18px}
+    .hero h2{font-size:22px}
+    .features{grid-template-columns:1fr;gap:12px}
+    .cta{width:100%;text-align:center;font-size:18px;padding:14px 18px}
+    .container{padding:12px}
+  }
+</style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <h1>O SEGREDO DO EMAGRECIMENTO</h1>
-        <h2>O QUE NÃO TE CONTAM</h2>
+      <div class="brand">
+        <h1>O Segredo do Emagrecimento</h1>
+        <p>O QUE NÃO TE CONTAM — e-book para mulheres</p>
+      </div>
+      <div style="text-align:right">
+        <a class="cta" href="https://pay.kiwify.com.br/Q2LrZ6a" target="_blank" rel="noopener">Quero garantir meu e-book</a>
+      </div>
     </header>
 
-    <section>
-        <h2>Você já tentou de tudo… e nada parece funcionar?</h2>
-        <p>Dietas malucas, restrições impossíveis, começar motivada e parar poucos dias depois… você não está sozinha. E isso não é culpa sua. O problema é que ninguém te contou os verdadeiros segredos do emagrecimento saudável — até agora.</p>
+    <section class="hero">
+      <div class="text">
+        <h2>Transforme seu corpo e sua mente — sem dietas malucas</h2>
+        <p class="card">Descubra segredos cientificamente embasados e técnicas psicológicas que realmente funcionam. Criado para mulheres reais, com rotina corrida e sem tempo para métodos complicados.</p>
 
-        <div class="box">
-            <h3>✨ O QUE VOCÊ VAI DESCOBRIR NO E-BOOK</h3>
-            <ul>
-                <li>O papel da mente no emagrecimento sustentável</li>
-                <li>O método das 3 fases para reprogramar seus hábitos</li>
-                <li>Por que dietas restritivas sempre falham</li>
-                <li>Como comer mais e emagrecer com saciedade inteligente</li>
-                <li>Como parar a fome emocional e a compulsão</li>
-                <li>O mapa da constância feminina</li>
-                <li>Os hábitos que mantêm o peso para sempre</li>
-            </ul>
+        <div class="card" style="margin-top:18px">
+          <strong style="display:block;margin-bottom:8px">Dentro do e-book você descobre:</strong>
+          <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.6">
+            <li>10 segredos que nunca te contaram</li>
+            <li>Plano de 30 dias simples e eficiente</li>
+            <li>Exercícios práticos para rotina corrida</li>
+            <li>Como controlar compulsão e ansiedade</li>
+          </ul>
+          <a class="cta" href="https://pay.kiwify.com.br/Q2LrZ6a">Quero começar agora</a>
         </div>
+      </div>
 
-        <h2>Para quem é este e-book?</h2>
-        <p>Para mulheres que querem emagrecer de forma leve, saudável, realista e sem sofrimento. Se você quer transformar não só o corpo, mas também sua mente e estilo de vida – este é o seu primeiro passo.</p>
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1594737625785-c0f5d0021f3a?q=80&w=1080&auto=format&fit=crop" 
+             alt="Mulher fitness saudável"/>
+      </div>
+    </section>
 
-        <h2>Resultados que você vai começar a sentir:</h2>
-        <ul>
-            <li>Mais leveza emocional</li>
-            <li>Fim da compulsão e da ansiedade alimentar</li>
-            <li>Mais energia e motivação</li>
-            <li>Emagrecimento natural e contínuo</li>
-            <li>Relação saudável com a comida e com o próprio corpo</li>
-        </ul>
+    <section class="features">
+      <div class="feature">
+        <strong>Leveza emocional</strong>
+        <div style="margin-top:8px;color:var(--muted)">Métodos para controlar ansiedade e comer sem culpa.</div>
+      </div>
+      <div class="feature">
+        <strong>Resultados sustentáveis</strong>
+        <div style="margin-top:8px;color:var(--muted)">Nada de efeito sanfona — evolua com consciência.</div>
+      </div>
+      <div class="feature">
+        <strong>Rotina que cabe em você</strong>
+        <div style="margin-top:8px;color:var(--muted)">Treinos curtos, hábitos simples e consistentes.</div>
+      </div>
+    </section>
 
-        <h2>💚 Acesso imediato por apenas R$ 37,00</h2>
-        <p>Comece hoje a transformação que você merece.</p>
-
-        <a class="cta-button" href="https://pay.kiwify.com.br/Q2LrZ6a" target="_blank">Quero garantir meu e-book agora</a>
-
-        <h2>Garantia de 7 dias 💚</h2>
-        <p>Se por qualquer motivo você sentir que o e-book não te ajudou, devolvemos seu dinheiro sem burocracia.</p>
-
-        <a class="cta-button" href="https://pay.kiwify.com.br/Q2LrZ6a" target="_blank">Quero começar agora</a>
+    <section style="margin-top:28px" class="card">
+      <h3 style="margin:0 0 8px">Garantia & Segurança</h3>
+      <p style="margin:0;color:var(--muted)">Você tem 7 dias para testar. Não gostou? Devolvemos seu dinheiro.</p>
+      <p style="margin:12px 0 0;font-size:14px;color:#6b8b75">Preço promocional por tempo limitado: <strong>R$ 37</strong></p>
     </section>
 
     <footer>
-        <p>© 2025 - O Segredo do Emagrecimento</p>
+      © 2025 • O Segredo do Emagrecimento — Desenvolvido por você
     </footer>
+  </div>
 </body>
 </html>
